@@ -2,11 +2,11 @@
   "name": "roster",
   "private": true,
   "version": "0.0.0",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "serve": "vite preview",
-    "build": "vite build --base=/assets/hrms/roster/ && yarn copy-html-entry",
+    "build": "node init && vite build --base=/assets/hrms/roster/ && yarn copy-html-entry",
     "copy-html-entry": "cp ../hrms/public/roster/index.html ../hrms/www/roster.html"
   },
   "dependencies": {
